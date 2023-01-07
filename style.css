@@ -1,0 +1,18 @@
+#titulo {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(137, 67, 202);
+    padding: 30px;
+}
+
+.cfk {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.inputs {
+    text-align: center;
+    padding: 30px;
+}
