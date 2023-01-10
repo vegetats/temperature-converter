@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <title>Conversor de temperaturas</title>
 </head>
 
@@ -16,32 +17,32 @@
     </header>
 
     <main>
-        <div class="temperature celcius">
+        <div class="temperature">
             <label class="temperature__label" for="celcius">Celcius</label>
             <input class="temperature__input" id="celcius" type="number">
             <button class="temperature__button" onclick="convertCelcius()"> Converter </button>
         </div>
 
-        <div class="temperature fahrenheit">
+        <div class="temperature">
             <label class="temperature__label" for="fahrenheit">Fahrenheit</label>
             <input class="temperature__input" id="fahrenheit" type="number">
             <button class="temperature__button" onclick="convertFahrenheit()"> Converter </button>
         </div>
 
-        <div class="temperature kelvin">
+        <div class="temperature">
             <label class="temperature__label" for="kelvin">Kelvin</label>
             <input class="temperature__input" id="kelvin" type="number">
             <button class="temperature__button" onclick="convertKelvin()"> Converter </button>
         </div>
     
         <div class="button">
-            <button class="button__clean">Limpar</button>
+            <button id="button__clean" onclick="clearFields()">Limpar</button>
         </div>
     
     </main>
 
     <footer>
-        <p class="text">Você também pode acessar esse projeto no meu <a href="https://github.com/vegetats/temperature-converter" target="_blank" rel="external">repositório GitHub</a> </p>
+        <p class="text">Você também pode acessar esse projeto no meu <a class="text__link" href="https://github.com/vegetats/temperature-converter" target="_blank" rel="external" >repositório GitHub</a> </p>
     </footer>
 
 </body>
