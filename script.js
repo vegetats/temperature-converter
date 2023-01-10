@@ -3,10 +3,8 @@ let inputFahrenheit = document.getElementById('fahrenheit');
 let inputKelvin = document.getElementById('kelvin');
 
 function convertCelcius() {
-    toFahrenheit = (inputCelcius.value * 1,8) + 32; 
-    toKelvin = inputCelcius.value +  273.15; 
-
-    console.log(22)
+    toFahrenheit = (inputCelcius.value * 1.8) + 32; 
+    toKelvin = parseFloat(inputCelcius.value) + 273.15; 
     
     inputFahrenheit.value = toFahrenheit;
     inputKelvin.value = toKelvin;
@@ -32,4 +30,5 @@ function clearFields() {
     inputCelcius.value = '';
     inputFahrenheit.value = '';
     inputKelvin.value = '';
+
 }   
