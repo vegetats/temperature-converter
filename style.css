@@ -4,7 +4,7 @@ body {
 
 header {
     width: 100vw;
-    height: 20vh;
+    height: 80px;
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ header {
 
 main {
     width: 100vw;
-    height: 70vh;
+    height: 73.2vh;
     background-color: var(--terciary);
     padding: 20px 0;
     display: flex;
@@ -54,6 +54,10 @@ main {
     font-size: 1.5em;
 }
 
+.temperature__input:focus {
+    outline: none;
+}
+
 .temperature__button {
     width: 10%;
     height: 35px;
@@ -81,42 +85,45 @@ main {
     align-items: center;
 }
 
-.button__clean {
+#button__clean {
     width: 50%;
     height: 100%;
     border-radius: 8px;
-    border: 4px solid rgb(164, 88, 234);
-    box-shadow: 4px 4px 0 rgb(61, 10, 113);
-    background-color: rgb(164, 88, 234);
-    color: rgb(61, 10, 113);
+    border: 4px solid var(--secondary);
+    box-shadow: 4px 4px 0 var(--primary);
+    background-color: var(--secondary);
+    color: var(--primary);
     font-size: 17px;
     transition: 0.3s ease-in-out;
 }
 
-.button__clean:hover {
+#button__clean:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
-footer {
+footer {            
     width: 100vw;
-    height: 10vh;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
     background-color: var(--primary);
     display: flex;
-    flex-direction: collunm;
+    flex-direction: colunm;
     justify-content: center;
     align-items: center;
 }
 
 .text {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--terciary);
 }
 
-.text a {
-    font-size: 20px;
+.text__link {
+    font-size: 18px;
     color: var(--terciary);
 }
+
 
 
